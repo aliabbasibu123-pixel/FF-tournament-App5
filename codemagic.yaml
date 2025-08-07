@@ -1,15 +1,15 @@
 workflows:
   android-release:
-    name: Firebase Tournament Build
+    name: FF Tournament APK Build
     environment:
-      flutter: stable
+      flutter: "stable" # or specific version like "3.13.0"
       android_signing:
         - keystore: FF_KEYSTORE
     scripts:
       - name: Install dependencies
         script: |
           flutter pub get
-      - name: Build release APK
+      - name: Build APK
         script: |
           flutter build apk --release
     artifacts:
