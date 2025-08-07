@@ -1,1 +1,1 @@
-Place your google-services.json here from Firebase console.
+Place your google-services.json here from Firebase Console.
